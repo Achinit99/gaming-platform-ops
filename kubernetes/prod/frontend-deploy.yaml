@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gaming-frontend
+  namespace: default
+spec:
+  replicas: 2 # for two servers (High Availability)
+  selector:
+    matchLabels:
+      app: gaming-frontend
+  template:
+    metadata:
+      labels:
+        app: gaming-frontend
+    spec:
+      containers:
+      - name: frontend
+        image: <YOUR_DOCKER_HUB_USERNAME>/<YOUR_IMAGE_NAME>:latest # For Docker image 
+        ports:
+        - containerPort: 3000 # Next.js/React port 
