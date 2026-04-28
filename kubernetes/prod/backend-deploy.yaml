@@ -16,8 +16,10 @@ spec:
       - name: backend
         image: achinit99/gaming-backend:latest
         ports:
-        - containerPort: 8000 # NestJS port
+        - containerPort: 4000 # NestJS port
         env:
+        - name: PORT
+          value: "4000"
         - name: SUPABASE_URL
           valueFrom:
             secretKeyRef:
