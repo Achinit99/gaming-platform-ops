@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: <YOUR_DOCKER_HUB_USERNAME>/<YOUR_IMAGE_NAME>:latest # For Docker image 
+        image: achinit99/gaming-frontend:latest # For Docker image 
         ports:
         - containerPort: 3000 # Next.js/React port 
