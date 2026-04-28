@@ -17,4 +17,7 @@ spec:
       - name: frontend
         image: achinit99/gaming-frontend:latest # For Docker image 
         ports:
-        - containerPort: 3000 # Next.js/React port 
+        - containerPort: 3000 # Next.js/React port
+        env:
+          - name: NEXT_PUBLIC_API_URL
+            value: "http://139.59.222.212"
