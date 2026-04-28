@@ -4,3 +4,5 @@ kind: Kustomization
 resources:
   - frontend-deploy.yaml
   - frontend-service.yaml
+  - backend-deploy.yaml
+  - backend-service.yaml
