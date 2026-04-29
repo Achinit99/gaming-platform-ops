@@ -14,13 +14,15 @@ spec:
     spec:
       containers:
         - name: backend
-          image: achinit99/gaming-backend:latest
+          image: achinit99/gaming-backend:v1.0.0
           imagePullPolicy: Always
           ports:
             - containerPort: 4000 # NestJS port
           env:
             - name: PORT
               value: "4000"
+            - name: FRONTEND_URL
+              value: "http://139.59.220.121"
             - name: DATABASE_URL
               valueFrom:
                 secretKeyRef:
