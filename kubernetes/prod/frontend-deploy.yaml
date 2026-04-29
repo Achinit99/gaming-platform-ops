@@ -4,7 +4,7 @@ metadata:
   name: gaming-frontend
   namespace: default
 spec:
-  replicas: 2 # for two servers (High Availability)
+  replicas: 2
   selector:
     matchLabels:
       app: gaming-frontend
@@ -15,9 +15,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: achinit99/gaming-frontend:v1.0.1 # For Docker image 
+        image: achinit99/gaming-frontend:v1.0.1 
         ports:
-        - containerPort: 3000 # Next.js/React port
-        env:
-          - name: NEXT_PUBLIC_API_URL
-            value: "http://139.59.222.212"
+        - containerPort: 80 # Nginx 

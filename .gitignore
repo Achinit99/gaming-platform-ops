@@ -6,3 +6,6 @@
 
 # Kubernetes secrets
 kubeconfig.yaml
+
+# Kubernetes config file
+gaming-platform-cluster-kubeconfig.yaml

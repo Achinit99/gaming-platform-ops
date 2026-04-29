@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: gaming-backend-service
 spec:
-  type: LoadBalancer
+  type: LoadBalancer 
   ports:
     - port: 80
       targetPort: 4000
