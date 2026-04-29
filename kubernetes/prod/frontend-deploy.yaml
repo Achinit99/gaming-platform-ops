@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: achinit99/gaming-frontend:v1.0.6 
+        image: achinit99/gaming-frontend:v1.0.7 
         imagePullPolicy: Always
         ports:
         - containerPort: 80 # Nginx 
