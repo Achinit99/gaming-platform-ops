@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: achinit99/gaming-frontend:latest # For Docker image 
+        image: achinit99/gaming-frontend:v1.0.1 # For Docker image 
         ports:
         - containerPort: 3000 # Next.js/React port
         env:
