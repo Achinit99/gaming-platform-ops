@@ -16,8 +16,8 @@ spec:
   - host: remnantborn.live
     http:
       paths:
-      - path: /api(/|$)(.*)
-        pathType: ImplementationSpecific
+      - path: /api
+        pathType: Prefix
         backend:
           service:
             name: gaming-backend-service
