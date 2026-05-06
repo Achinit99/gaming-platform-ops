@@ -7,3 +7,4 @@ resources:
   - backend-deploy.yaml
   - backend-service.yaml
   - ingress.yaml
+  - cluster-issuer.yaml
