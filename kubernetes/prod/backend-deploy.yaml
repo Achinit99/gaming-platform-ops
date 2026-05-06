@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: achinit99/gaming-backend:v1.0.1
+          image: achinit99/gaming-backend:v1.0.2
           imagePullPolicy: Always
           ports:
             - containerPort: 4000 # NestJS port
